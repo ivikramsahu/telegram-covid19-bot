@@ -1,4 +1,4 @@
-[covid19-status-bot](https://imgur.com/Sxn5acl)
+![covid19-status-bot](https://imgur.com/Sxn5acl)
 
 # Covid19 status bot on Telegram
 
