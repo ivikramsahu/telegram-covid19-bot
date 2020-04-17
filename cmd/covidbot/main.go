@@ -1,7 +1,8 @@
 package main
 
 import (
-  "log";"github.com/go-telegram-bot-api/telegram-bot-api"
+  "log"
+  "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 var numericKeyboard = tgbotapi.NewReplyKeyboard(
