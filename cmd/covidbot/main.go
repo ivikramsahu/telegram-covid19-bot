@@ -3,6 +3,7 @@ package main
 import (
   "log"
   "telegram-covid19-bot/keyboard"
+  "telegram-covid19-bot/dataRedis"
   "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
@@ -38,7 +39,7 @@ func main() {
     msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
 
     switch update.Message.Text {
-    case "/globalStatus":
+    case "/globalstatus":
       msg.ReplyMarkup = tgbotapi.NewRemoveKeyboard(true)
     case "/continents":
       msg.ReplyMarkup = continentKeyboard
@@ -57,6 +58,9 @@ func main() {
     case "/europe":
       msg.Text = keyboard.EuropeKeyboard
       msg.ParseMode = "markdown"
+    default:
+      msg.Text = dataRedis.GetDataCountry(update.Message.Text)
+      msg.ParseMode
     }
 
     bot.Send(msg)
