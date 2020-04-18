@@ -14,11 +14,40 @@ curl_setopt_array($curl, array(
 ));
 
 $response = curl_exec($curl);
+curl_close($curl);
+
 $covidData = json_decode($response, true);
+$countries_data = $covidData["Countries"];
 
 //setting up Global status
 foreach($covidData["Global"] as $k => $v){
   `redis-cli hset globalStatus $k $v`;
   echo "Key :: $k ===> Value :: $v \n";
 }
-curl_close($curl);
+
+$maxLen = sizeof($countries_data);
+
+/*
+| ====  key for hash to be stored in Redis ==== |
+              NewConfirmed 
+              TotalConfirmed
+              NewDeaths
+              TotalDeaths
+              NewRecovered 
+              TotalRecovered
+| ============================================= |
+ */ 
+
+for ($i = 0; $i <= $maxLen; $i++){
+  //Getting Countries data
+  foreach($countries_data[$i] as $k => $v){
+    if($k == "Slug"){
+      $myRedisKey = $v;
+    }
+
+    if ($k == "NewConfirmed" || $k == "TotalConfirmed" || $k =="NewDeaths" || $k == "TotalDeaths" || $k == "NewRecovered" || $k == "TotalRecovered"){
+      `redis-cli hset $myRedisKey $k $v`;
+      echo "Key :: $k ==> Value :: $v \n";
+    }
+  }
+}
