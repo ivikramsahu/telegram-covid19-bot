@@ -22,7 +22,7 @@ so it’s important that you also practice respiratory etiquette (for example, b
 //AsiaKeyboard countries keyboard
 var AsiaKeyboard =`
 ---------------------------
-     Asian countries
+Asian countries
 ---------------------------   
 1.  /india          
 2.  /china           
@@ -36,15 +36,15 @@ var AsiaKeyboard =`
 10. /iran            
 11. /thailand        
 12. /myanmar         
-13. /south_korea     
+13. /south-korea     
 14. /iraq            
 15. /afghanistan     
-16. /saudi_arabia    
+16. /saudi-arabia    
 17. /uzbekistan      
 18. /malaysia        
 19. /yemen           
 20. /nepal           
-21. /north_korea     
+21. /north-korea     
 22. /srilanka        
 23. /kazakhstan      
 24. /syria           
@@ -73,7 +73,7 @@ var AsiaKeyboard =`
 47. /maldives
 48. /brunei
 ----------------------------
-  Select your country
+Select your country
 ----------------------------
 `
 //AfricaKeyboard continents keyboard
@@ -81,9 +81,9 @@ var AfricaKeyboard =`
 1.  /nigeria
 2.  /ethiopia
 3.  /egypt
-4.  /dr_congo
+4.  /dr-congo
 5.  /tanzania
-6.  /south_africa
+6.  /south-africa
 7.  /kenya
 8.  /uganda
 9.  /algeria
@@ -94,9 +94,9 @@ var AfricaKeyboard =`
 14. /ghana
 15. /madagascar
 16. /cameroon
-17. /côte_d_ivoire
+17. /côte-d-ivoire
 18. /niger
-19. /burkina_faso
+19. /burkina-faso
 20. /mali
 21. /malawi
 22. /zambia
@@ -109,13 +109,13 @@ var AfricaKeyboard =`
 29. /benin
 28. /burundi
 29. /tunisia
-30. /south_sudan
+30. /south-sudan
 31. /togo
-32. /sierra_leone
+32. /sierra-leone
 33. /libya
 34. /congo
 35. /liberia
-36. /central_african_republic
+36. /central-african-republic
 37. /mauritania
 38. /eritrea
 39. /namibia
@@ -123,21 +123,21 @@ var AfricaKeyboard =`
 41. /botswana
 42. /gabon
 43. /lesotho
-44. /guinea_bissau
-45. /equatorial_guinea
+44. /guinea-bissau
+45. /equatorial-guinea
 46. /mauritius
 47. /eswatini
 48. /djibouti
 49. /comoros
-50. /cabo_verde
-51. /sao_tome_and_principe
+50. /cabo-verde
+51. /sao-tome-and-principe
 52. /seychelles
 `
 
 //EuropeKeyboard countries keyboard
 var EuropeKeyboard = `
 ---------------------------------
-      European countries               
+European countries               
 ---------------------------------      
 1.  /russia        
 2.  /germany       
@@ -150,7 +150,7 @@ var EuropeKeyboard = `
 9.  /romania       
 10. /netherlands   
 11. /belgium       
-12. /czech_republic
+12. /czech-republic
 13. /greece        
 14. /portugal      
 15. /sweden        
@@ -167,10 +167,10 @@ var EuropeKeyboard = `
 26. /ireland
 27. /croatia
 28. /moldova
-29. /bosnia_and_herzegovina
+29. /bosnia-and-herzegovina
 30. /albania
 31. /lithuania
-32. /north_macedonia
+32. /north-macedonia
 33. /slovenia
 34. /latvia
 35. /estonia
@@ -181,26 +181,26 @@ var EuropeKeyboard = `
 40. /iceland
 41. /monaco
 42. /liechtenstein
-43. /san_marino
-44. /holy_see
+43. /san-marino
+44. /holy-see
 ----------------------------
-  Select your country
+Select your country
 ----------------------------
 `
 
 //AmericaKeyboard countries keyboard
 var AmericaKeyboard =`
 ----------------------------
-   American Countries
+American Countries
 ----------------------------
 1.  /canada
 2.  /chile
 3.  /colombia
-4.  /costa_rica
+4.  /costa-rica
 5.  /cuba
 6.  /ecuador
-7.  /el_salvador
-8.  /antigua_and_barbuda
+7.  /el-salvador
+8.  /antigua-and-barbuda
 9.  /grenada
 10. /argentina
 11. /guatemala
@@ -213,19 +213,19 @@ var AmericaKeyboard =`
 18. /panama
 19. /paraguay
 20. /peru
-21. /saint_kitts_and_nevis
-22. /saint_lucia
-23. /saint_vincent_and_the_grenadines
+21. /saint-kitts-and-nevis
+22. /saint-lucia
+23. /saint-vincent-and-the-grenadines
 24. /bolivia
 25. /suriname
 26. /brazil
-27. /trinidad_and_tobago
+27. /trinidad-and-tobago
 28. /belize
 29. /us
 30. /uruguay
 31. /venezuela
 ----------------------------
-  Select your country
+Select your country
 ----------------------------
 `
 
