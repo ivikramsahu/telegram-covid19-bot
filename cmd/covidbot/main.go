@@ -1,7 +1,6 @@
 package main
 
 import (
-  "fmt"
   "log"
   "telegram-covid19-bot/keyboard"
   "github.com/go-telegram-bot-api/telegram-bot-api"
@@ -37,22 +36,27 @@ func main() {
       continue
     }
     msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
-    fmt.Println(msg)
-    log.Printf("[%s] %s", update.Message.From.UserName, update.Message.Text)
 
     switch update.Message.Text {
     case "/globalStatus":
       msg.ReplyMarkup = tgbotapi.NewRemoveKeyboard(true)
     case "/continents":
       msg.ReplyMarkup = continentKeyboard
+    case "/coronavirus":
+      msg.Text = keyboard.CoronaVirus
+      msg.ParseMode = "markdown"
     case "/asia":
-      msg.ReplyToMessageID = keyboard.AsiaKeyboard
+      msg.Text = keyboard.AsiaKeyboard
+      msg.ParseMode = "markdown"
     case "/africa":
-      msg.ReplyMarkup = keyboard.AfricaKeyboard
+      msg.Text= keyboard.AfricaKeyboard
+      msg.ParseMode = "markdown"
     case "/america":
-      msg.ReplyMarkup = keyboard.AmericaKeyboard
+      msg.Text = keyboard.AmericaKeyboard
+      msg.ParseMode = "markdown"
     case "/europe":
-      msg.ReplyMarkup = keyboard.EuropeKeyboard
+      msg.Text = keyboard.EuropeKeyboard
+      msg.ParseMode = "markdown"
     }
 
     bot.Send(msg)
