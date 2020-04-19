@@ -15,6 +15,15 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 curl_close($curl);
 
-var_dump(json_decode($response,true));
+$stateData = json_decode($response,true);
+
+//looping and setting up statewise value
+foreach ($stateData["data"] as $key => $value) {
+  $keyRedis = strtolower($key);
+  $keyRedis = str_replace(' ', '-', $keyRedis);
+  foreach($value as $ink => $inv){
+    echo "redis-cli hset statewise $keyRedis $ink $inv \n";
+  }
+}
 
 ?>
