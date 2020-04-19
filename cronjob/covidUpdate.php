@@ -47,7 +47,6 @@ for ($i = 0; $i <= $maxLen; $i++){
 
     if ($k == "NewConfirmed" || $k == "TotalConfirmed" || $k =="NewDeaths" || $k == "TotalDeaths" || $k == "NewRecovered" || $k == "TotalRecovered"){
       `redis-cli hset $myRedisKey $k $v`;
-      echo "Key :: $k ==> Value :: $v \n";
     }
   }
 }
