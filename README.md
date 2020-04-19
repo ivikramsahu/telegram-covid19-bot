@@ -5,7 +5,6 @@
 A real-time corona virus update you can fetch from this bot. 🤖
 
 ## How it is build? 🛠
------------------------
 
 - Global Api is used :: https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest
 - For Indian states update :: 
@@ -13,7 +12,6 @@ A real-time corona virus update you can fetch from this bot. 🤖
     - You can access the API here https://ameerthehacker.github.io/corona-india-status/covid19-indian-states.json
     
 ## How to use ?
-----------------------
 
 - Join the bot using https://t.me/gocovid19_bot
 - For Global update you can use:
@@ -30,7 +28,7 @@ A real-time corona virus update you can fetch from this bot. 🤖
 Show your support by 🤩 the repo
 
 ## License
--------------
+
 MIT © [Vikram Sahu](snipperbytes(@)gmail(dot)com) 🥑
 
     
