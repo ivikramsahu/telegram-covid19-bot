@@ -1,137 +1,125 @@
 package keyboard
 
-//CoronaVirus Update
-var CoronaVirus = `
-**About COVID-19**
-Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus .
-
-Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. 
-Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
-
-**How you can prevent?**
-
-The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads.
-Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.
-
-The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes,
-so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
-`
-
-
-
 //AsiaKeyboard countries keyboard
-var AsiaKeyboard =`
+var AsiaKeyboard = `
 ---------------------------
 Asian countries
 ---------------------------   
-1.  /india          
-2.  /china           
-3.  /indonesia       
-4.  /pakistan        
-5.  /bangalesh       
-6.  /japan           
-7.  /philippines     
-8.  /vietnam         
-9.  /turkey         
-10. /iran            
-11. /thailand        
-12. /myanmar         
-13. /south-korea     
-14. /iraq            
-15. /afghanistan     
-16. /saudi-arabia    
-17. /uzbekistan      
-18. /malaysia        
-19. /yemen           
-20. /nepal           
-21. /north-korea     
-22. /srilanka        
-23. /kazakhstan      
-24. /syria           
-25. /cambodia
-26. /jordan
-27. /azerbaijan
-28. /uae
-29. /tajikistan
-30. /israel
-31. /laos
-32. /lebanon
-33. /kyrgyzstan
-34. /turkmenistan
-35. /singapore
-36. /oman
-37. /stateofpalestine
-38. /kuwait
-39. /georgia
-40. /mongolia
-41. /armenia
-42. /qatar
-43. /bahrain
-44. /timorleste
-45. /cyprus
-46. /bhutan
-47. /maldives
-48. /brunei
+1.  /country@india          
+2.  /country@china           
+3.  /country@indonesia       
+4.  /country@pakistan        
+5.  /country@bangladesh       
+6.  /country@japan           
+7.  /country@philippines     
+8.  /country@vietnam         
+9.  /country@turkey         
+10. /country@iran            
+11. /country@thailand        
+12. /country@myanmar         
+13. /country@south_korea     
+14. /country@iraq            
+15. /country@afghanistan     
+16. /country@saudi_arabia    
+17. /country@uzbekistan      
+18. /country@malaysia        
+19. /country@yemen           
+20. /country@nepal           
+21. /country@north_korea     
+22. /country@sri_lanka        
+23. /country@kazakhstan      
+24. /country@syria           
+25. /country@cambodia
+26. /country@jordan
+27. /country@azerbaijan
+28. /country@united_arab_emirates
+29. /country@tajikistan
+30. /country@israel
+31. /country@laos
+32. /country@lebanon
+33. /country@kyrgyzstan
+34. /country@turkmenistan
+35. /country@singapore
+36. /country@oman
+37. /country@state_of_palestine
+38. /country@kuwait
+39. /country@georgia
+40. /country@mongolia
+41. /country@armenia
+42. /country@qatar
+43. /country@bahrain
+44. /country@timorleste
+45. /country@cyprus
+46. /country@bhutan
+47. /country@maldives
+48. /country@brunei
 ----------------------------
 Select your country
 ----------------------------
 `
-//AfricaKeyboard continents keyboard
-var AfricaKeyboard =`
-1.  /nigeria
-2.  /ethiopia
-3.  /egypt
-4.  /dr-congo
-5.  /tanzania
-6.  /south-africa
-7.  /kenya
-8.  /uganda
-9.  /algeria
-10. /sudan
-11. /morocco
-12. /angola
-13. /mozambique
-14. /ghana
-15. /madagascar
-16. /cameroon
-17. /côte-d-ivoire
-18. /niger
-19. /burkina-faso
-20. /mali
-21. /malawi
-22. /zambia
-23. /senegal
-24. /chad
-25. /somalia
-26. /zimbabwe
-27. /guinea
-28. /rwanda
-29. /benin
-28. /burundi
-29. /tunisia
-30. /south-sudan
-31. /togo
-32. /sierra-leone
-33. /libya
-34. /congo
-35. /liberia
-36. /central-african-republic
-37. /mauritania
-38. /eritrea
-39. /namibia
-40. /gambia
-41. /botswana
-42. /gabon
-43. /lesotho
-44. /guinea-bissau
-45. /equatorial-guinea
-46. /mauritius
-47. /eswatini
-48. /djibouti
-49. /comoros
-50. /cabo-verde
-51. /sao-tome-and-principe
-52. /seychelles
+
+// AfricaKeyboard continents keyboard
+var AfricaKeyboard = `
+---------------------------------
+African countries               
+--------------------------------- 
+1.  /country@nigeria
+2.  /country@ethiopia
+3.  /country@egypt
+4.  /country@dr_congo
+5.  /country@tanzania
+6.  /country@south_africa
+7.  /country@kenya
+8.  /country@uganda
+9.  /country@algeria
+10. /country@sudan
+11. /country@morocco
+12. /country@angola
+13. /country@mozambique
+14. /country@ghana
+15. /country@madagascar
+16. /country@cameroon
+17. /country@cote_divoire
+18. /country@niger
+19. /country@burkina_faso
+20. /country@mali
+21. /country@malawi
+22. /country@zambia
+23. /country@senegal
+24. /country@chad
+25. /country@somalia
+26. /country@zimbabwe
+27. /country@guinea
+28. /country@rwanda
+29. /country@benin
+28. /country@burundi
+29. /country@tunisia
+30. /country@south_sudan
+31. /country@togo
+32. /country@sierra_leone
+33. /country@libya
+34. /country@congo
+35. /country@liberia
+36. /country@central_african_republic
+37. /country@mauritania
+38. /country@eritrea
+39. /country@namibia
+40. /country@gambia
+41. /country@botswana
+42. /country@gabon
+43. /country@lesotho
+44. /country@guinea_bissau
+45. /country@equatorial_guinea
+46. /country@mauritius
+47. /country@eswatini
+48. /country@djibouti
+49. /country@comoros
+50. /country@cabo_verde
+51. /country@sao_tome_and_principe
+52. /country@seychelles
+----------------------------
+Select your country
+----------------------------
 `
 
 //EuropeKeyboard countries keyboard
@@ -139,93 +127,137 @@ var EuropeKeyboard = `
 ---------------------------------
 European countries               
 ---------------------------------      
-1.  /russia        
-2.  /germany       
-3.  /uk            
-4.  /france        
-5.  /italy         
-6.  /spain         
-7.  /ukraine       
-8.  /poland        
-9.  /romania       
-10. /netherlands   
-11. /belgium       
-12. /czech-republic
-13. /greece        
-14. /portugal      
-15. /sweden        
-16. /hungary       
-17. /belarus       
-18. /austria       
-19. /serbia        
-20. /switzerland   
-21. /bulgaria      
-22. /denmark       
-23. /finland
-24. /slovakia
-25. /norway
-26. /ireland
-27. /croatia
-28. /moldova
-29. /bosnia-and-herzegovina
-30. /albania
-31. /lithuania
-32. /north-macedonia
-33. /slovenia
-34. /latvia
-35. /estonia
-36. /montenegro
-37. /luxembourg
-38. /malta
-39. /andorra
-40. /iceland
-41. /monaco
-42. /liechtenstein
-43. /san-marino
-44. /holy-see
+1.  /country@russia        
+2.  /country@germany       
+3.  /country@united_kingdom            
+4.  /country@france        
+5.  /country@italy         
+6.  /country@spain         
+7.  /country@ukraine       
+8.  /country@poland        
+9.  /country@romania       
+10. /country@netherlands   
+11. /country@belgium       
+12. /country@czech_republic
+13. /country@greece        
+14. /country@portugal      
+15. /country@sweden        
+16. /country@hungary       
+17. /country@belarus       
+18. /country@austria       
+19. /country@serbia        
+20. /country@switzerland   
+21. /country@bulgaria      
+22. /country@denmark       
+23. /country@finland
+24. /country@slovakia
+25. /country@norway
+26. /country@ireland
+27. /country@croatia
+28. /country@moldova
+29. /country@bosnia_and_herzegovina
+30. /country@albania
+31. /country@lithuania
+32. /country@north_macedonia
+33. /country@slovenia
+34. /country@latvia
+35. /country@estonia
+36. /country@montenegro
+37. /country@luxembourg
+38. /country@malta
+39. /country@andorra
+40. /country@iceland
+41. /country@monaco
+42. /country@liechtenstein
+43. /country@san_marino
+44. /country@holy_see
 ----------------------------
 Select your country
 ----------------------------
 `
 
 //AmericaKeyboard countries keyboard
-var AmericaKeyboard =`
+var AmericaKeyboard = `
 ----------------------------
 American Countries
 ----------------------------
-1.  /canada
-2.  /chile
-3.  /colombia
-4.  /costa-rica
-5.  /cuba
-6.  /ecuador
-7.  /el-salvador
-8.  /antigua-and-barbuda
-9.  /grenada
-10. /argentina
-11. /guatemala
-12. /guyana
-13. /honduras
-14. /jamaica
-15. /mexico
-16. /barbados
-17. /nicaragua
-18. /panama
-19. /paraguay
-20. /peru
-21. /saint-kitts-and-nevis
-22. /saint-lucia
-23. /saint-vincent-and-the-grenadines
-24. /bolivia
-25. /suriname
-26. /brazil
-27. /trinidad-and-tobago
-28. /belize
-29. /us
-30. /uruguay
-31. /venezuela
+1.  /country@canada
+2.  /country@chile
+3.  /country@colombia
+4.  /country@costa_rica
+5.  /country@cuba
+6.  /country@ecuador
+7.  /country@el_salvador
+8.  /country@antigua_and_barbuda
+9.  /country@grenada
+10. /country@argentina
+11. /country@guatemala
+12. /country@guyana
+13. /country@honduras
+14. /country@jamaica
+15. /country@mexico
+16. /country@barbados
+17. /country@nicaragua
+18. /country@panama
+19. /country@paraguay
+20. /country@peru
+21. /country@saint_kitts_and_nevis
+22. /country@saint_lucia
+23. /country@saint_vincent_and_the_grenadines
+24. /country@bolivia
+25. /country@suriname
+26. /country@brazil
+27. /country@trinidad_and_tobago
+28. /country@belize
+29. /country@united_states
+30. /country@uruguay
+31. /country@venezuela
 ----------------------------
 Select your country
 ----------------------------
 `
 
+//StateKeyboard added
+var StateKeyboard = `
+----------------------------
+	   Indian states
+----------------------------
+1.  /state@andhra_pradesh
+2.  /state@arunachal_pradesh
+3.  /state@assam
+4.  /state@bihar
+5.  /state@chandigarh
+6.  /state@chhattisgarh
+7.  /state@delhi
+8.  /state@goa
+9.  /state@gujarat
+10. /state@haryana
+11. /state@himachal_pradesh
+12. /state@jammu_and_kashmir
+13. /state@jharkhand
+14. /state@karnataka
+15. /state@kerala
+16. /state@ladakh
+17. /state@madhya_pradesh
+18. /state@maharashtra
+19. /state@manipur
+20. /state@meghalaya
+21. /state@mizoram
+22. /state@nagaland
+23. /state@odisha
+24. /state@puducherry
+26. /state@punjab
+27. /state@rajasthan
+28. /state@tamil_nadu
+29. /state@telengana
+30. /state@tripura
+31. /state@uttarakhand
+32. /state@uttar_pradesh
+33. /state@west_bengal
+----------------------------
+Select your state
+----------------------------
+`
+
+//AboutBot is description on usage
+var AboutBot = "The *COVID-19 Status* has below.\n Usage: \n 1. Get statewise status of outbreak \n  / + state + @ + your statename \n for eg. /state@maharashtra OR /statewise (for option). \n2. Get countrywise status of outbreak. \n / + country + @ + your countryname \n for eg. /country@india OR /continents (for options).\n if your country has space like 'united states' then \n use /country@united_states (use _[underscore] instead of ''[space])."
