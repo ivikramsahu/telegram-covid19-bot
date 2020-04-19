@@ -10,6 +10,11 @@ A real-time corona virus update you can fetch from this bot. 🤖
 - For Indian states update :: 
     - The source is https://www.mohfw.gov.in/
     - You can access the API here https://ameerthehacker.github.io/corona-india-status/covid19-indian-states.json
+
+## How to login to bot?
+- search for username :: **@gocovid19_bot** in telegram search.
+    - you will get the below window
+    - ![covid19](https://i.imgur.com/aXvl4LK.png)
     
 ## How to use ?
 
