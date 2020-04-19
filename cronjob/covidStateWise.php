@@ -22,8 +22,9 @@ foreach ($stateData["data"] as $key => $value) {
   $keyRedis = strtolower($key);
   $keyRedis = str_replace(' ', '-', $keyRedis);
   foreach($value as $ink => $inv){
-    echo "redis-cli hset statewise $keyRedis $ink $inv \n";
+#    `redis-cli hset $keyRedis $ink $inv `;
   }
+  echo "/$keyRedis\n";
 }
 
 ?>

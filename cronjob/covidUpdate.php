@@ -21,8 +21,7 @@ $countries_data = $covidData["Countries"];
 
 //setting up Global status
 foreach($covidData["Global"] as $k => $v){
-  `redis-cli hset globalStatus $k $v`;
-  echo "Key :: $k ===> Value :: $v \n";
+  `redis-cli hset globalstatus $k $v`;
 }
 
 $maxLen = sizeof($countries_data);
