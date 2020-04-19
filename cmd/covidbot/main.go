@@ -2,9 +2,10 @@ package main
 
 import (
   "log"
+  dataredis "telegram-covid19-bot/dataRedis"
   "telegram-covid19-bot/keyboard"
-  "telegram-covid19-bot/dataRedis"
-  "github.com/go-telegram-bot-api/telegram-bot-api"
+
+  tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 var continentKeyboard = tgbotapi.NewReplyKeyboard(
@@ -39,30 +40,36 @@ func main() {
     msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
 
     switch update.Message.Text {
-    case "/globalstatus":
-      msg.ReplyMarkup = tgbotapi.NewRemoveKeyboard(true)
     case "/continents":
       msg.ReplyMarkup = continentKeyboard
-    case "/coronavirus":
-      msg.Text = keyboard.CoronaVirus
-      msg.ParseMode = "markdown"
+    case "/aboutbot":
+      msg.Text = keyboard.AboutBot
+      msg.ParseMode = "HTML"
+    case "/globalstatus":
+      msg.Text = dataredis.GetDataSource(update.Message.Text + "@global")
+      msg.ParseMode = "HTML"
     case "/asia":
       msg.Text = keyboard.AsiaKeyboard
-      msg.ParseMode = "markdown"
+      msg.ParseMode = "HTML"
     case "/africa":
-      msg.Text= keyboard.AfricaKeyboard
-      msg.ParseMode = "markdown"
+      msg.Text = keyboard.AfricaKeyboard
+      msg.ParseMode = "HTML"
     case "/america":
       msg.Text = keyboard.AmericaKeyboard
-      msg.ParseMode = "markdown"
+      msg.ParseMode = "HTML"
     case "/europe":
       msg.Text = keyboard.EuropeKeyboard
-      msg.ParseMode = "markdown"
+      msg.ParseMode = "HTML"
+    case "/statewise":
+      msg.Text = keyboard.StateKeyboard
+      msg.ParseMode = "HTML"
     default:
-      msg.Text = dataRedis.GetDataCountry(update.Message.Text)
-      msg.ParseMode
+      msg.Text = dataredis.GetDataSource(update.Message.Text)
+      msg.ParseMode = "markdown"
     }
-
+    if msg.Text == "" {
+      msg.Text = "No data found"
+    }
     bot.Send(msg)
   }
 }
