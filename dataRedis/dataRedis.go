@@ -13,6 +13,9 @@ import (
 func GetDataSource(sourceName string) string {
 
 	defer EmptySet()
+  if sourceName == "/country"{
+    return EmptySet()
+  }
 
 	var validSource = regexp.MustCompile(`(?m)^\/(country)|(state)@([a-z]*)`)
 
