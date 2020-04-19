@@ -31,6 +31,6 @@ Show your support by 🤩 the repo
 
 ## License
 -------------
-MIT © [Vikram Sahu](snipperbytes(@)gmail(dot)com)
+MIT © [Vikram Sahu](snipperbytes(@)gmail(dot)com) 🥑
 
     
