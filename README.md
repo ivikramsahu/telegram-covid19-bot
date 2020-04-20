@@ -1,12 +1,12 @@
 ![covid19-status](https://i.imgur.com/DGiBzdE.png)
 
-# COVID-19 status bot on Telegram 🎟
+# COVID-19 status (@gocovid19_bot) 🎟
 
-A real-time corona virus update you can fetch from this bot. 🤖
+A status bot for pandemic outbreak killing lakhs of people worldwide known as coronavirus. This bot fetches real-time data from the apis defined in the below section.
 
 ## How it is build? 🛠
 
-- Global Api is used :: https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest
+- Global Api you can use :: https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest
 - For Indian states update :: 
     - The source is https://www.mohfw.gov.in/
     - You can access the API here https://ameerthehacker.github.io/corona-india-status/covid19-indian-states.json
