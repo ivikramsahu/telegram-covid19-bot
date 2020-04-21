@@ -3,7 +3,7 @@ package keyboard
 //AsiaKeyboard countries keyboard
 var AsiaKeyboard = `
 ---------------------------
-Asian countries
+<b>Asian countries</b>
 ---------------------------   
 1.  /country@india          
 2.  /country@china           
@@ -61,7 +61,7 @@ Select your country
 // AfricaKeyboard continents keyboard
 var AfricaKeyboard = `
 ---------------------------------
-African countries               
+<b>African countries</b>               
 --------------------------------- 
 1.  /country@nigeria
 2.  /country@ethiopia
@@ -125,7 +125,7 @@ Select your country
 //EuropeKeyboard countries keyboard
 var EuropeKeyboard = `
 ---------------------------------
-European countries               
+<b>European countries</b>               
 ---------------------------------      
 1.  /country@russia        
 2.  /country@germany       
@@ -179,7 +179,7 @@ Select your country
 //AmericaKeyboard countries keyboard
 var AmericaKeyboard = `
 ----------------------------
-American Countries
+<b>American countries</b>
 ----------------------------
 1.  /country@canada
 2.  /country@chile
@@ -260,4 +260,4 @@ Select your state
 `
 
 //AboutBot is description on usage
-var AboutBot = "The *COVID-19 Status* has below.\n Usage: \n 1. Get statewise status of outbreak \n  / + state + @ + your statename \n for eg. /state@maharashtra OR /statewise (for option). \n2. Get countrywise status of outbreak. \n / + country + @ + your countryname \n for eg. /country@india OR /continents (for options).\n if your country has space like 'united states' then \n use /country@united_states (use _[underscore] instead of ''[space])."
+var AboutBot = "<b>COVID-19 Status</b> \n Usage: \n 1. Get statewise status of outbreak \n  <b><i>/ + state + @ + your statename</i></b> \n for eg. <b>/state@maharashtra</b> OR <b>/statewise</b> (for option). \n2. Get countrywise status of outbreak. \n <b><i>/ + country + @ + your countryname</i></b> \n for eg. <b>/country@india</b> OR <b>/continents</b> (for options).\n if your country has space like 'united states' then \n use <b>/country@united_states</b> (use _[underscore] instead of ''[space])."
