@@ -16,14 +16,14 @@ $response = curl_exec($curl);
 curl_close($curl);
 
 $stateData = json_decode($response,true);
-
 //looping and setting up statewise value
 foreach ($stateData["data"] as $key => $value) {
   $keyRedis = strtolower($key);
   $keyRedis = str_replace(' ', '-', $keyRedis);
   foreach($value as $ink => $inv){
-      `redis-cli hset $keyRedis $ink $inv `;
+    `redis-cli hset $keyRedis $ink $inv `;
   }
 }
+echo "Done";
 
 ?>
