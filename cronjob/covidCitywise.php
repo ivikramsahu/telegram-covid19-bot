@@ -17,19 +17,36 @@ curl_close($curl);
 
 $cityData = json_decode($response,true);
 echo "data--->".sizeof($cityData);
+/*
+key1 :: district ---> Value :: South Andaman
+key1 :: active ---> Value :: 5
+key1 :: confirmed ---> Value :: 15
+key1 :: deceased ---> Value :: 0
+key1 :: recovered ---> Value :: 10
+ */
 
 for ($i=0;$i<=sizeof($cityData);$i++){
   foreach($cityData[$i] as $k => $v){
-    echo "key :: $k --> value :: $v\n";
     if ($k == "districtData"){
-      var_dump($k);
-      exit;
-      foreach($k as $ink => $inv){
-        echo "key1 :: $ink ---> Value :: $inv\n";
-        exit;   
+      for ($j=0;$j<=sizeof($v);$j++){
+        foreach($v[$j] as $ink => $inv){
+          `redis-cli del tempDistrictKey`;
+          if ($ink == "district"){
+            $redisKey = strtolower($inv);
+            $redisKey = str_replace(' ',"-",$redisKey); 
+            echo "\n----------".$redisKey."\n";
+            echo "redis-cli set tempDistrictKey $redisKey";
+          }
+          if (($ink == "active") || ($ink == "confirmed") || ($ink == "deceased") || ($ink == "recovered")){
+            $myRedisVal = `redis-cli get tempDistrictKey`;  
+            echo "redis-cli hset $myRedisVal $ink $inv"; 
+          }
+        }
+        exit;
       }
     }
   }
+  exit;   
 }
 exit;
 var_dump($cityData[1]);
