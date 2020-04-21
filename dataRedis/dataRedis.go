@@ -43,7 +43,7 @@ func GetDataSource(sourceName string) string {
 		bodyData := new(bytes.Buffer)
 
 		for key, value := range datasize {
-			fmt.Fprintf(bodyData, "%s  → \"%s\"\n", key, value)
+			fmt.Fprintf(bodyData, "%s    →   \"%s\"\n", key, value)
 		}
 
 		return bodyData.String()
