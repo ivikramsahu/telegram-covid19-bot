@@ -17,7 +17,7 @@ func main() {
   fmt.Println(datasize["NewConfirmed"])
   pong, err := client.Ping().Result()
   fmt.Println(pong, err)
-  // Output: PONG <nil>
+ 	 // Output: PONG <nil>
 }
 
 
